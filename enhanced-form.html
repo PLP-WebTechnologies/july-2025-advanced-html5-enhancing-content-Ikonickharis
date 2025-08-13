@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML5 Showcase Page</title>
+</head>
+<body>
+
+  <header>
+    <h1>Assignment for HTML webpage</h1>
+    <p>This example demonstrates HTML5 features: lists, tables, media embedding, and a complete form using native validation and semantic structure.</p>
+  </header>
+
+  <main>
+
+    <!-- List Section -->
+    <section>
+      <h2>Programming Concepts Checklist</h2>
+
+      <h3>Essential Topics (Unordered List)</h3>
+      <ul>
+        <li>Variables and Data Types</li>
+        <li>Control Structures</li>
+        <li>Functions and Scope</li>
+        <li>Object-Oriented Programming</li>
+      </ul>
+
+      <h3>Learning Path (Ordered List)</h3>
+      <ol>
+        <li>HTML & CSS Basics</li>
+        <li>JavaScript Fundamentals</li>
+        <li>Client-Server Communication</li>
+        <li>Databases and Backend</li>
+      </ol>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+      <h2>Language Comparison Table</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Language</th>
+            <th>Type System</th>
+            <th>Use Case</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Python</td>
+            <td>Dynamic</td>
+            <td>Web, AI, Scripting</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>Static</td>
+            <td>Enterprise, Android</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Dynamic</td>
+            <td>Web Frontend/Backend</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+      <h2>Embedded Media</h2>
+      <p>Here's a sample image and video embedded using HTML5:</p>
+
+      <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sample placeholder image" height="200" width="300"/>
+      <br/> <br/>
+
+      <video controls width="400">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>Contact Form</h2>
+      <form action="#" method="post" autocomplete="on" novalidate>
+        
+        <fieldset>
+          <legend>Basic Information</legend>
+
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="Jane Doe" required minlength="2" maxlength="100" autocomplete="name">
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" required autocomplete="email">
+
+          <label for="phone">Phone Number (e.g., 123-456-7890):</label>
+          <input type="tel" id="phone" name="phone" pattern="\d{3}-\d{3}-\d{4}" placeholder="123-456-7890" required autocomplete="tel">
+
+          <label for="country">Country:</label>
+          <input type="text" id="country" name="country" value="USA" readonly>
+        </fieldset>
+        <br/><br/>
+
+        <fieldset>
+          <legend>Account Setup</legend>
+
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" placeholder="yourUsername" required minlength="4" maxlength="20" autocomplete="username">
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6" placeholder="Enter a strong password" autocomplete="new-password">
+
+          <label for="confirm">Confirm Password:</label>
+          <input type="password" id="confirm" name="confirm" required minlength="6" placeholder="Re-enter password" autocomplete="new-password">
+        </fieldset>
+        <br/><br/>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label for="language">Favorite Language:</label>
+          <select id="language" name="language" required>
+            <option value="">--Select--</option>
+            <option value="python">Python</option>
+            <option value="js">JavaScript</option>
+            <option value="java">Java</option>
+          </select>
+
+          <p>Preferred Contact Method:</p>
+          <label><input type="radio" name="contact" value="email" required> Email</label>
+          <label><input type="radio" name="contact" value="phone"> Phone</label>
+
+          <label><input type="checkbox" name="subscribe" value="yes"> Subscribe to newsletter</label>
+        </fieldset>
+        <br/><br/>
+
+        <fieldset>
+          <legend>Message</legend>
+
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="5" minlength="10" maxlength="500" placeholder="Type your message here..." required></textarea>
+        </fieldset>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+  <br/><br/>
+
+  <footer>
+    <p>&copy; 2025 HTML5 Showcase. Built for demonstration purposes only.</p>
+  </footer>
+
+</body>
+</html>
